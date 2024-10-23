@@ -1,0 +1,13 @@
+# Copyright (c) 2024 Nordic Semiconductor
+# SPDX-License-Identifier: Apache-2.0
+
+# This is the schema for any object in an .zml file which specifies schema: "foo"
+# It works like a dts bindings file with very similar layout (but naturally only supporting
+# sane types like int, not phandles)
+foo:
+  properties:
+    bar:
+      type: int
+      required: True
+    zar:
+      type: str

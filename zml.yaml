@@ -1,0 +1,17 @@
+# Copyright (c) 2024 Nordic Semiconductor
+# SPDX-License-Identifier: Apache-2.0
+
+
+# Map entry is instance label. Each label is unique, and can be any name. It is
+# not tied to anything outside of the .zms files included in the build.
+foo0:
+  # The schema entry specifies the type of object and its properties similar
+  # to a dts compatible. The schema is found in a .zmls file
+  schema: "foo"
+  bar: 1.8
+  zar: "big"
+
+# Second instance of an object of type "foo" excluding the non required zar property
+foo1:
+  schema: "foo"
+  bar: 0.5
